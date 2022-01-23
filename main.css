@@ -1,0 +1,156 @@
+body {
+  margin: 0 30px 0 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  height: 50px;
+}
+
+.link_nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+.link_nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+.container_nav {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  height: 40px;
+}
+
+.container_info {
+  margin-top: 60px;
+  text-align: center;
+  background-color: rgb(255, 246, 162);
+  height: 50px;
+  border-radius: 3px;
+}
+
+.container_shopCart {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "box box summary"
+    "box1 box1 summary"
+    "box2 box2 summary";
+
+  text-align: center;
+}
+
+.box {
+  grid-area: box;
+}
+
+.summary {
+  margin-top: 10px;
+  grid-area: summary;
+  background-color: rgb(250, 250, 250);
+  color: rgb(87, 83, 83);
+  font-size: 20px;
+  border-radius: 6px;
+  height: 450px;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box,
+.box1,
+.box2 {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+}
+
+.shopCart_img {
+  width: 200px;
+}
+
+.box_item {
+  display: inline-block;
+}
+
+.button_add_1,
+.button_add_2,
+.button_add_3 {
+  margin-left: 50px;
+  margin-right: 10px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(43, 226, 150);
+  cursor: pointer;
+}
+
+.button_minus_1,
+.button_minus_2,
+.button_minus_3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(228, 224, 225);
+  cursor: pointer;
+}
+
+.button_delete_1,
+.button_delete_2,
+.button_delete_3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(207, 24, 70);
+  cursor: pointer;
+}
+
+.discount_code {
+  border: none;
+  padding: 10px;
+}
+
+#shipment {
+  border: none;
+  padding: 10px;
+}
+
+.discount,
+.shipment,
+.summary_price {
+  padding-top: 50px;
+}
+
+.buy_btn {
+  margin-top: 50px;
+  border: none;
+  padding: 15px;
+  background-color: rgb(57, 57, 58);
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#shipment {
+  border: none;
+}
